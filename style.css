@@ -1,3 +1,4 @@
+/* this make sure that the webpage doesn't have white spaces around the edges*/
 body,
 h1,
 h2,
@@ -7,6 +8,9 @@ ul {
   padding: 0px;
 }
 
+/* this gives the body a different font. it is used set the 
+distance between lines of text, and gives the entire webpage a 
+background color of lightgrey*/
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -14,20 +18,27 @@ body {
   color: black;
 }
 
+/* this gives the header its black background color and aligns the content
+to the center. the padding also gives the thickness of the header*/
 header {
   background-color: black;
   color: white;
-  padding: 20px 0px 20px 0px;
+  padding: 20px 0px;
   text-align: center;
 }
 
+/*this gives the footer its black background color and aligns the content
+to the center. the padding also gives the thickness of the header*/
 footer {
   text-align: center;
-  padding: 15px 0px 15px 0px;
+  padding: 15px 0px;
   background-color: black;
   color: white;
 }
 
+/* this makes sure that the links are displayed horizontally as supposed to 
+stacking on top of each other and that it is centered. it also removes the 
+bullet points of the links */
 nav ul{
   margin-top: 10px;
   list-style: none;
@@ -35,15 +46,19 @@ nav ul{
   justify-content: center;
 }
 
+/* gives more space between the links */
 li{
   margin: 0px 15px 0px 15px;
 }
 
+/* this gives the links a text color of white and removes the underscore
+that links have */
 li a {
   color: white;
   text-decoration: none;
 }
 
+/* this gives the main content of the page its white background */
 main {
   padding: 20px;
   max-width: 1000px;
@@ -51,25 +66,30 @@ main {
   background-color: white;
 }
 
+/* this makes the containers of the elements next to each other as 
+supposed to stacking on top of each other */
 .services-container {
   display: flex;
   margin-top: 20px;
 }
 
+/* this gives a lightgrey background for the different services */
 .service-card {
   min-width: 250px;
   background-color: lightgray;
   padding: 15px;
   border-radius: 8px;
   margin: 12px;
-  }
+}
   
+  /* this displays the form to be above each other and gives it a max-width */
 .contact-form {
   flex-direction: column;
   display: flex;
   max-width: 500px;
-  }
-    
+}
+
+/* this modifies the input and textarea of the forms */
 .contact-form input,
 .contact-form textarea {
   padding: 10px;
@@ -79,13 +99,13 @@ main {
   margin-bottom: 20px;
   }
       
-
+/* this modifies the button */
 .contact-form button {
   width: fit-content;
   padding: 10px 20px 10px 20px;
   background-color: black;
   color: white;
   border: none;
-  cursor: pointer;
+  cursor: pointer; /*give unique look when mouse hovers over the button*/
   border-radius: 4px;
 }
